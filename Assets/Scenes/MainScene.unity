@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 463105649}
   - component: {fileID: 463105648}
   - component: {fileID: 463105650}
+  - component: {fileID: 463105651}
   m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
@@ -194,7 +195,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 13a58f128489dc74db06f79ca78ce7d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -289,6 +290,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 26.977196, y: 2.42}
   m_EdgeRadius: 0
+--- !u!114 &463105651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463105647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11f3530d9069ab468120acbd6b81d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelBackrgoundScroller
+  parentTransform: {fileID: 1223774642}
+  scrollScale: 1
 --- !u!1 &468223393
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468223395}
+  - component: {fileID: 468223396}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -320,6 +336,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468223396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468223393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5251168454b75cf43b9be8bc0a4c2d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  levelGrid: {fileID: 1223774642}
+  moveScale: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580980565}
   - component: {fileID: 1580980567}
+  - component: {fileID: 1580980568}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -860,7 +891,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 13a58f128489dc74db06f79ca78ce7d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -894,6 +925,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1580980568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580980564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11f3530d9069ab468120acbd6b81d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelBackrgoundScroller
+  parentTransform: {fileID: 1223774642}
+  scrollScale: 0.025
 --- !u!1 &1584487678
 GameObject:
   m_ObjectHideFlags: 0
